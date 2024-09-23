@@ -13,7 +13,7 @@ const App = () => {
   const [currentItem, setCurrentItem] = useState(0);
   //current item
 const fetchJobs = async () => {
-  const response = await fetch(url)
+  const response = await fetch('/api/react-tabs-project')
   const newJobs = await response.json()
   setJobs(newJobs);
   setIsLoading(false)
